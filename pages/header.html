@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+      .colors {
+          background: linear-gradient(to left, #24965f, #62c08c);
+      }
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      /* remove underline and styling on a tag*/
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+       /* Styles for the header section */
+      .shop-header {
+        color: black;
+         /*background: linear-gradient(to left,#11998e, #38ef7d); */
+        background-color: #89f4b6;
+        padding: 2px 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 20px;
+      }
+
+      .shop-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 40px;
+      }
+
+      .shop-logo {
+        height: 60px;
+        margin: 0;
+      }
+
+      .shop-name {
+        font-size: 25px;
+        font-weight: bolder;
+        margin: 0;
+      }
+
+      .search-container {
+        display: flex;
+        margin: 0;
+        margin-bottom: 35px;
+      }
+      input {
+        border: none;
+        outline: none;
+        background: none;
+      }
+      .search-bar {
+        width: 300px;
+        padding: 8px 15px;
+        font-size: 10px;
+        border-radius: 25px 0 0 25px;
+        background-color: #f0ffff;
+      }
+      .search-button {
+        display: block;
+        margin-left: auto;
+        padding: 8px 15px;
+        font-size: 10px;
+        border: none;
+        border-radius: 0 25px 25px 0;
+        background: linear-gradient(to left, #ff4b1f, #ff9068);
+        color: white;
+      }
+      .search-button:hover {
+        cursor: pointer;
+        height: 37px;
+        background: none;
+        background-color: #ddffeb;
+        color:black;
+      }
+      .navbar-menu-container {
+        display: flex;
+      }
+      .navbar-menu {
+        margin: 0 15px;
+        font-size: 15px;
+        padding: 5px 25px;
+        border-radius: 10px;
+        border: none;
+        background: linear-gradient( to right,  #24965f,#43ab76, #62c08c);
+        color: white;
+      }
+      .navbar-menu:hover {
+        background: none;
+        background-color: #ddffeb;
+        
+      }
+      .navbar-menu:hover .navbar-anchor{
+        color: black;
+      }
+      .navbar-anchor {
+        color: white;
+      }
+      
+        /* Responsive for small screen */
+        @media only screen and (max-width: 700px) {
+          body {
+            overflow-x: hidden;
+          }
+          .shop-header {
+            flex-direction: column;
+          }
+          .shop-logo{
+              height: 50px;
+          }
+          .shop-name {
+            font-size: 25px;
+          }
+          .search-container {
+          
+          margin-bottom: 15px;
+          }
+          .navbar-menu-container {
+            display: flex;
+            margin: 15px 0;
+          }
+          .navbar-menu {
+            margin: 0 10px;
+            font-size: 10px;
+            padding: 5px 20px;
+            border-radius: 10px;
+            border: none;
+          }
+          .shop-footer {
+            flex-direction: column;
+            display: flex;
+            justify-content: space-around; 
+            align-items: center;     
+          }
+          .footer-sec {
+            width: 300px;
+            margin: 10px 10px;
+            border-right: none;
+            border-bottom: 2px solid white;
+          }
+          .shop-footer a{
+            font-size: 16px;
+          }
+        }
+        /* Responsive for tablet screen */
+        @media screen and (min-width: 701px)and (max-width:900px){
+          body {
+            overflow-x: hidden;
+          }
+          .shop-header {
+            flex-direction: row;
+            justify-content: space-around;
+          }
+          .shop-logo{
+              height: 70px;
+          }
+          .shop-name {
+            font-size: 25px;
+          }
+          .search-container {
+            margin-left:0;
+            margin-bottom: 0;
+          }
+          .navbar-menu-container {
+            display: flex;
+            margin: 15px 0;
+          }
+          .navbar-menu {
+            font-size: 15px;
+            padding: 3px 30px;
+            border-radius: 10px;
+
+          }
+          .footer-sec {
+            width: 350px;
+            margin: 10px 10px;
+            border-right: 2px solid white;
+          }
+          .footer-data {
+            margin-left: 16px;
+          }
+          .shop-footer a{
+            font-size: 13px;
+          }
+        }
+        /* Responsive for laptop screen */
+        @media screen and (min-width: 901px) and (max-width:1299px){
+          body {
+            overflow-x: hidden;
+          }
+          .shop-header {
+            flex-direction: row;
+            justify-content: space-around;
+          }
+          .shop-logo{
+              height: 70px;
+          }
+          .search-container {
+            margin-left:0;
+            margin-bottom: 0;
+          }
+          .navbar-menu-container {
+            display: flex;
+            margin: 15px 0;
+          }
+          .navbar-menu {
+            font-size: 15px;
+            padding: 5px 20px;
+          }
+          .footer-sec {
+            width: 380px;
+            margin: 10px 10px;
+            border-right: 2px solid white;
+          }
+          .footer-data {
+            margin-left: 1px;
+          }
+          .shop-footer a{
+            font-size: 15px;
+          }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header code -->
+    <div class="shop-header">
+        <a href="./index.html">
+          <div class="shop-container">
+            <img src="./images/home/logo.png" alt="logo" class="shop-logo" />
+            <p class="shop-name">FootFables</p>
+          </div>
+        </a>
+        <div class="search-container">
+          <input type="text" placeholder="Trendy Shoes" class="search-bar" id="search-book" onchange="searchBook()"/>
+          <button type="button" class="search-button" onclick="showBook(bookName)">
+            Search
+          </button>
+        </div>
+
+        <div class="navbar-menu-container">
+          <button type="button" class="navbar-menu">
+            <a href="./pages/login.html" class="navbar-anchor"> Home  </a>
+          </button>
+          <button type="button" class="navbar-menu">
+            <a href="./pages/fiction.html" class="navbar-anchor"> About  </a>
+          </button>
+          <button type="button" class="navbar-menu">
+            <a href="./pages/non-fiction.html" class="navbar-anchor"> Mens  </a>
+          </button>
+          <button type="button" class="navbar-menu">
+            <a href="./pages/novel.html" class="navbar-anchor"> Kids </a>
+          </button>
+          <button type="button" class="navbar-menu">
+            <a href="./pages/historic.html" class="navbar-anchor"> Womens</a>
+          </button>
+          <button type="button" class="navbar-menu">
+            <a href="./pages/historic.html" class="navbar-anchor"> Track-Order</a>
+          </button>
+          <button type="button" class="navbar-menu">
+            <a href="./pages/historic.html" class="navbar-anchor"> Login</a>
+          </button>
+        </div>
+      </div>
+</body>
+</html>

@@ -22,7 +22,6 @@
               <li><a href="./../index.html" class="nav-link px-2 link-body-emphasis fw-medium">Home</a></li>
               <li><a href="./mens-section.html" class="nav-link px-2 link-secondary fw-medium">Mens</a></li>
               <li><a href="./womens-section.html" class="nav-link px-2 link-body-emphasis fw-medium">Womens</a></li>
-              <li><a href="./kids-section.html" class="nav-link px-2 link-body-emphasis fw-medium">Kids</a></li>
             </ul>
     
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-5" role="search">
@@ -35,7 +34,7 @@
               </a>
               <ul class="dropdown-menu text-small">
                 <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Cart</a></li>
+                <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Login/Register</a></li>
               </ul>
@@ -86,7 +85,7 @@
                     <div class="mx-sm-3">
                       <p class="text-start fw-bold fs-6">Campus Men's VIRTAL Running  </p>
                       <p class="text-start fs-5">1000/-</p>
-                      <button type="button" class="btn btn-danger py-1 px-2 col-12" onclick="addToCart()">Buy</button>
+                      <button type="button" class="btn btn-danger py-1 px-2 col-12" onclick="addToCart(m1)">Buy</button>
                     </div>
                 </div>
             </div>
@@ -97,9 +96,8 @@
                     <div class="mx-sm-3">
                       <p class="text-start fw-bold fs-6">ASIAN Men's  Thar-01  Sports shoe </p>
                     <p class="text-start fs-5">1500/-</p>
-                    <button type="button" class="btn btn-danger py-1 px-4 col-12" onclick="addToCart()">Buy</button>
+                    <button type="button" class="btn btn-danger py-1 px-4 col-12" onclick="addToCart(m2)">Buy</button>
                     </div>
-                    
                 </div>
             </div>
 
@@ -109,7 +107,7 @@
                     <div class="mx-sm-3">
                       <p class="text-start fw-bold fs-6">Red Tape Men Black Running Shoe</p>
                     <p class="text-start fs-5">1200/-</p>
-                    <button type="button" class="btn btn-danger py-1 px-4 col-12" onclick="addToCart()">Buy</button>
+                    <button type="button" class="btn btn-danger py-1 px-4 col-12" onclick="addToCart(m3)">Buy</button>
                     </div>
                     
                 </div>
@@ -122,7 +120,7 @@
                     <div class="mx-sm-3">
                       <p class="text-start fw-bold fs-6">Red Tape Men Grey Running Shoe</p>
                     <p class="text-start fs-5">1300/-</p>
-                    <button type="button" class="btn btn-danger py-1 px-4 col-12" onclick="addToCart()">Buy</button>
+                    <button type="button" class="btn btn-danger py-1 px-4 col-12" onclick="addToCart(m4)">Buy</button>
                     </div>
                     
 
@@ -142,7 +140,7 @@
                     <div class="mx-sm-3">
                       <p class="text-start fw-bold fs-6"> Red Tape Sneaker Casual Shoes  </p>
                       <p class="text-start fs-5">1000/-</p>
-                      <button type="button" class="btn btn-danger py-1 px-2 col-12" onclick="addToCart()">Buy</button>
+                      <button type="button" class="btn btn-danger py-1 px-2 col-12" onclick="addToCart(m5)">Buy</button>
                     </div>
                     
                 </div>
@@ -153,7 +151,7 @@
                     <img src="../images/men/sneakers-2.jpg" class="d-block" height="250" alt="Shoe-1"> 
                     <div class="mx-sm-3"> <p class="text-start fw-bold fs-6">Red Tape Casual Sneaker Shoes </p>
                       <p class="text-start fs-5">1500/-</p>
-                      <button type="button" class="btn btn-danger py-1 px-4 col-12" onclick="addToCart()">Buy</button></div>
+                      <button type="button" class="btn btn-danger py-1 px-4 col-12" onclick="addToCart(m6)">Buy</button></div>
                     
                 </div>
             </div>
@@ -163,7 +161,7 @@
                     <img src="../images/men/sneakers-3.jpg" class="d-block" height="250"  alt="Shoe-1"> 
                     <div class="mx-sm-3"> <p class="text-start fw-bold fs-6">Puma Unisex-Adult Wired Rapid </p>
                       <p class="text-start fs-5">1200/-</p>
-                      <button type="button" class="btn btn-danger py-1 px-4 col-12" onclick="addToCart()">Buy</button>
+                      <button type="button" class="btn btn-danger py-1 px-4 col-12" onclick="addToCart(m7)">Buy</button>
                     </div> 
                     
                 </div>
@@ -176,9 +174,8 @@
                     <div class="mx-sm-3">
                       <p class="text-start fw-bold fs-6">ASIAN Men's Tarzan-11 White </p>
                       <p class="text-start fs-5">1300/-</p>
-                      <button type="button" class="btn btn-danger py-1 px-4 col-12" onclick="addToCart()">Buy</button>
+                      <button type="button" class="btn btn-danger py-1 px-4 col-12" onclick="addToCart(m8)">Buy</button>
                     </div>  
-                    
                 </div>
             </div>
         </div>
@@ -194,7 +191,6 @@
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Mens</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Womens</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Kids</a></li>
             </ul>
           
             <div class="d-flex justify-content-between align-items-center" >
@@ -213,8 +209,8 @@
         </footer>
       </div>
     
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
+      <script src="./../index.js"></script> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
 </body>
 </html>
